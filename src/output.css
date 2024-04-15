@@ -554,44 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.m-0 {
-  margin: 0px;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -616,10 +578,6 @@ video {
 
 .mt-14 {
   margin-top: 3.5rem;
-}
-
-.box-border {
-  box-sizing: border-box;
 }
 
 .flex {
@@ -658,6 +616,10 @@ video {
   justify-content: space-between;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -693,10 +655,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.p-0 {
-  padding: 0px;
-}
-
 .p-3 {
   padding: 0.75rem;
 }
@@ -711,8 +669,8 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.pb-16 {
-  padding-bottom: 4rem;
+.pb-5 {
+  padding-bottom: 1.25rem;
 }
 
 .pl-5 {
@@ -764,7 +722,7 @@ video {
   outline-offset: 2px;
 }
 
-.container{
+.cont{
   background: linear-gradient(135deg,#153677, #4e085f);
 }
 
@@ -774,6 +732,8 @@ h2{
 
 li{
   position: relative;
+  left: 40px;
+  margin-bottom: 20px;
 }
 
 ul li::before{
@@ -782,11 +742,11 @@ ul li::before{
   height: 28px;
   width: 28px;
   border-radius: 50%;
-  background-image: url(/images/unchecked.png);
+  background-image: url(/unchecked.png);
   background-size: cover;
   background-position: center;
-  top: 12px;
-  left: 8px;
+  top: 1px;
+  left: -39px;
 }
 
 ul li.checked{
@@ -795,13 +755,13 @@ ul li.checked{
 }
 
 ul li.checked::before{
-  background-image: url(/images/checked.png);
+  background-image: url(/checked.png);
 }
 
 ul li span{
   position: absolute;
-  right: 0;
-  top: 5px;
+  right: 40px;
+  top: -5px;
   width: 40px;
   height: 40px;
   font-size: 22px;

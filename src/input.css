@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.container{
+.cont{
     background: linear-gradient(135deg,#153677, #4e085f);
 }
 h2{
@@ -10,6 +10,8 @@ h2{
 }
 li{
     position: relative;
+    left: 40px;
+    margin-bottom: 20px;
 }
 
 ul li::before{
@@ -18,24 +20,24 @@ ul li::before{
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(/images/unchecked.png);
+    background-image: url(/unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
-    left: 8px;
+    top: 1px;
+    left: -39px;
 }
 ul li.checked{
     color: #555;
     text-decoration: line-through;
 }
 ul li.checked::before{
-    background-image: url(/images/checked.png);
+    background-image: url(/checked.png);
 }
 
 ul li span{
     position: absolute;
-    right: 0;
-    top: 5px;
+    right: 40px;
+    top: -5px;
     width: 40px;
     height: 40px;
     font-size: 22px;
